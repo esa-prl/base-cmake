@@ -243,7 +243,7 @@ macro(rock_standard_layout)
 
     if (IS_DIRECTORY ${PROJECT_SOURCE_DIR}/bindings/ruby)
         if (EXISTS ${PROJECT_SOURCE_DIR}/bindings/ruby/CMakeLists.txt)
-            option(BINDINGS_RUBY "install this package's Ruby bindings" ON)
+            option(BINDINGS_RUBY "install this package's Ruby bindings" OFF)
             include(RockRuby)
             if (BINDINGS_RUBY)
                 if (RUBY_FOUND)
